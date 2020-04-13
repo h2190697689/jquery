@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #name{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
     <div id="name">hejiamin</div>
     <script>
-        console.log(document.querySelector("#name").textContent)
-        console.log(document.querySelector("#name").innerHTML);
-        console.log(document.querySelector("#name").innerText)
+        var ele = document.querySelector("#name");
+        // ele.textContent = "<p>This is a test.</p>"
+        console.log(ele.style);
+        console.log(document.defaultView.getComputedStyle(ele,null).width)
+        // console.log(document.querySelector("#name").textContent)
+        // console.log(document.querySelector("#name").innerHTML);
+        // console.log(document.querySelector("#name").innerText)
     </script>
 </body>
 </html>

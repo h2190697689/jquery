@@ -6,6 +6,7 @@
 5. appendChild
 6. replaceChild
 7. removeChild
+8. cloneNode  (true/false true为深拷贝，复制本节点及子节点树；false为浅拷贝)
 
 
 # ap
@@ -17,4 +18,4 @@
 6. nextSibling
 7. parentNode
 8. innerText/outerText
-9.  innerHTML/outerHTML 
+9. innerHTML/outerHTML 
